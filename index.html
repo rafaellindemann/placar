@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap" rel="stylesheet">
+    
+    <title>Placar</title>
+</head>
+<body>
+    <h1>Placar</h1>
+    <section id="tela-placar">
+        <div id="placar-esq">
+            <button class="bt-placar" onclick="incrementarEsquerda()">
+                <img class="icone-placar" src="./img/icon-park-solid--up-one.svg" alt="">
+            </button>
+            <p id="valor-esq">0</p>
+            <button class="bt-placar" onclick="decrementarEsquerda()">
+                <img class="icone-placar" src="./img/icon-park-solid--down-one.svg" alt="">
+            </button>
+        </div>
+        <div id="placar-meio">
+            <p id="cronometro"></p>
+            <button id="bt-play" onclick="acionarCronometro()">Play</button>
+            <p id="x">x</p>
+            <button id="bt-reset" onclick="resetar()">
+                <img id="icone-reset" src="./img/system-uicons--reset.svg" alt="">
+            </button>
+        </div>
+        <div id="placar-dir">
+            <button class="bt-placar" onclick="incrementarDireita()">
+                <img class="icone-placar" src="./img/icon-park-solid--up-one.svg" alt="">
+            </button>
+            <p id="valor-dir">0</p>
+            <button class="bt-placar" onclick="decrementarDireita()">
+                <img class="icone-placar" src="./img/icon-park-solid--down-one.svg" alt="">
+            </button>
+        </div>
+        
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
